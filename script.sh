@@ -131,7 +131,7 @@ run_updates_installs_configurations () {
     ssh -tt ubuntu@$ip 'sudo echo "<html><body><p>Hello World</p></body></html>" > /var/www/html/index.html'
   else
     sleep 2
-    run_updates_installs
+    run_updates_installs_configurations
   fi
 }
 
